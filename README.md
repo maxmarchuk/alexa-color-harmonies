@@ -16,7 +16,7 @@ I will be using the Alexa Skills API, AWS Management console, AWS Lambda, and an
 ###### License: MIT
 
 ## Week 3 Report
-ALl of the work I'm doing is in Amazon's various web services including the Lambda management console. I've been doing mostly experimental work but at this point I have a working prototype that I can test in the Amazon Alexa developer app by sending text commands to the alexa skill in the cloud. Here are the things I've got working:
+All of the work I'm doing is in Amazon's various web services including the Lambda management console. I've been doing mostly experimental work but at this point I have a working prototype that I can test in the Amazon Alexa developer app by sending text commands to the alexa skill in the cloud. Here are the things I've got working:
 
 #### Alexa Interaction Model
 This is what the user will be interacting with, using their voice. The idea here is to offer many different ways to set your color or get harmonies for your color, because otherwise the user would have to look at the documentation each time, and I want this to be somewhat intuitive. Feel free to open an issue on this repo if you believe there should be something else added.
@@ -33,18 +33,18 @@ This is what the user will be interacting with, using their voice. The idea here
       * "my color is {first} {second} {third} {fourth} {fifth} {sixth}",
       * "my current color is {first} {second} {third} {fourth} {fifth} {sixth}" 
   * Handling for the different color harmonies (complementary, split-complementary, triadic, tetradic). I am not a designer, so many of these may be grammatically incorrect
-  * Must be spoken in one the following ways: 
-    * "What are the {harmonyType} colors",
-    * "give me the {harmonyType} colors",
-    * "{harmonyType} colors",
-    * "{harmonyType} colors for my color",
-    * "what is the complement for my color",
-    * "what complements my color",
-    * "what is the triad for my color",
-    * "what is the tetrad for my color",
-    * "what is the triad",
-    * "what is the tetrad",
-    * "what is the complement"
+    * Must be spoken in one the following ways: 
+      * "What are the {harmonyType} colors",
+      * "give me the {harmonyType} colors",
+      * "{harmonyType} colors",
+      * "{harmonyType} colors for my color",
+      * "what is the complement for my color",
+      * "what complements my color",
+      * "what is the triad for my color",
+      * "what is the tetrad for my color",
+      * "what is the triad",
+      * "what is the tetrad",
+      * "what is the complement"
     
 This is the gist of the interaction model, and this is what the alexa skills development kit runs against my lambda function through various "Intents". I defined the above phrases to work with various intents that are then handled in my lambda function. That's where the actual coding comes in and I can do some math on the hex color codes to get the right harmonies.
 

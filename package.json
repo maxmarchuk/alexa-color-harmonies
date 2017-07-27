@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/maxmarchuk/alexa-color-harmonies/issues"
   },
-  "homepage": "https://github.com/maxmarchuk/alexa-color-harmonies#readme"
+  "homepage": "https://github.com/maxmarchuk/alexa-color-harmonies#readme",
+  "dependencies": {
+    "alexa-sdk": "^1.0.11"
+  }
 }

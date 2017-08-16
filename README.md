@@ -25,26 +25,11 @@ This is what the user will be interacting with, using their voice. The idea here
     * Can be done with either 3 or 6 hexadecimal characters. I am using hex codes for colors because calculation seems to be easiest with these. 
     * Must be spoken in one the following ways: 
       * "set color to {first} {second} {third}",
-      * "set color to {first} {second} {third} {fourth} {fifth} {sixth}",
-      * "set current color to {first} {second} {third}",
-      * "set current color to {first} {second} {third} {fourth} {fifth} {sixth}",
-      * "my current color is {first} {second} {third}",
-      * "my color is {first} {second} {third}",
-      * "my color is {first} {second} {third} {fourth} {fifth} {sixth}",
-      * "my current color is {first} {second} {third} {fourth} {fifth} {sixth}" 
+      * "set color to {first} {second} {third} {fourth} {fifth} {sixth}"
   * Handling for the different color harmonies (complementary, split-complementary, triadic, tetradic). I am not a designer, so many of these may be grammatically incorrect
     * Must be spoken in one the following ways: 
       * "What are the {harmonyType} colors",
-      * "give me the {harmonyType} colors",
-      * "{harmonyType} colors",
-      * "{harmonyType} colors for my color",
-      * "what is the complement for my color",
-      * "what complements my color",
-      * "what is the triad for my color",
-      * "what is the tetrad for my color",
-      * "what is the triad",
-      * "what is the tetrad",
-      * "what is the complement"
+      * "What is the complement?"
     
 This is the gist of the interaction model, and this is what the alexa skills development kit runs against my lambda function through various "Intents". I defined the above phrases to work with various intents that are then handled in my lambda function. That's where the actual coding comes in and I can do some math on the hex color codes to get the right harmonies.
 
@@ -53,7 +38,7 @@ As mentioned above, the AWS lambda function will handle the various intents and 
 To calculate the harmonies, I will need to convert the hex codes into a form called HSL (Hue, Saturation and Lightness) which is much easier to perform calculations on, especially for harmonies.
 Here are some of the formulas I will need to calculate the different harmonies:
 
-###### Complementary:
+###### Complementary:(Currently the only harmony implemented)
 * formula: H1 = |(H0 + 180 degrees) - 360 degrees|
 
 ###### Split Complementary:

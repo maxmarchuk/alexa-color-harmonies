@@ -9,8 +9,9 @@ The color harmonies I plan to add to this skill are:
 * Tetradic
 ### Resources
 I will be using the Alexa Skills API, AWS Management console, AWS Lambda, and an Amazon Echo for this project. 
-
+[Week 3 of development](https://github.com/maxmarchuk/alexa-color-harmonies/blob/master/week3report.md)
 ### Contact
 ###### Name: Max Marchuk
 ###### Email: maxmarchuk@gmail.com
 ###### License: MIT
+

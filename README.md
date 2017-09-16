@@ -8,8 +8,6 @@ The currently supported color harmonies are:
 * Complementary
 * Split Complementary
 * Triadic
-
-The color harmonies i have yet to add are:
 * Tetradic
 
 ### Installation Instructions

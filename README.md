@@ -1,11 +1,15 @@
 # Alexa Color Harmony Skill
-Ask Alexa for color harmonies!
+Voice-controlled utility for Amazon Echo enabled devices. This skill allows people to get colors that look good with one another (color harmonies). 
+https://www.amazon.com/Max-Marchuk-Color-Harmonies/dp/B074DM1KW2
+
 ### Description 
 The goal of this project is to create an Alexa skill that will allow you to ask Alexa for various color harmonies for colors. An example phrase would be "Alexa, what's the complementary color for hex <some hex color code>".
-The color harmonies I plan to add to this skill are:
+The currently supported color harmonies are:
 * Complementary
 * Split Complementary
 * Triadic
+
+The color harmonies i have yet to add are:
 * Tetradic
 
 ### Installation Instructions
@@ -18,9 +22,6 @@ I used AWS Lambda to make a function for handling the intents and Alexa Skills K
 
 ### Resources
 I will be using the Alexa Skills API, AWS Management console, AWS Lambda, and an Amazon Echo for this project. 
-
-[Week 3 of development](https://github.com/maxmarchuk/alexa-color-harmonies/blob/master/week3report.md)
-
 
 ### Contact
 ###### Name: Max Marchuk
